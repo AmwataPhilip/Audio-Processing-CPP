@@ -1,5 +1,5 @@
-#ifndef SAMPLER.H
-#define SAMPLER .H
+#ifndef SAMPLER_H
+#define SAMPLER_H
 
 namespace AMWPHI001
 {

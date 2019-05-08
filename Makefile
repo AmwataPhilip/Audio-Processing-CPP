@@ -3,15 +3,17 @@ BIN = bin
 SRC = src
 RES = results
 TARGETS = samp
-OBJECTS = $(SOURCES:.cpp=.o)
-SOURCES = $(SRC)/*.cpp
+OBJECTS = Samp.o Sampler.o
+SOURCES = $(SRC)/Samp.cpp $(SRC)/Sampler.cpp
 
-$(BIN)/$(TARGETS): $(OBJECTS)
-	$(CC) -o $@ $ˆ
+$(TARGETS): $(OBJECTS)
+	$(CC) $(OBJECTS) -o $(TARGETS)
+	mv $(OBJECTS) $(BIN)/
+	mv $(TARGETS) $(BIN)/
 
+$(OBJECTS): $(SOURCES)
+	$(CC) -c $(SOURCES)
 
-$(BIN)/%.o: $(SRC)/%.cpp
-	$(CC) -c $< -o $@
 
 clean:
 	rm -r $(BIN)/*
