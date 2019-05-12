@@ -7,8 +7,7 @@
 ---
 
     Samp.cpp
-    Audio.cpp
-    Audio.h
+    AudioSample.h
 
 ### Implementation Instructions
 
@@ -21,7 +20,7 @@
 
 ---
 
-    1. make - compile Samp.cpp Audio.cpp
+    1. make - compile Samp.cpp
     2. make run - run program with test case
     3. make clean - delete all .o files and executables from the project
 
@@ -33,10 +32,8 @@
                                 bin/
                                     samp
                                     Samp.o
-                                    Audio.o
                                 src/
                                     Samp.cpp
-                                    Audio.cpp
-                                    Audio.h
+                                    AudioSample.h
                                 Makefile
                                 README.md
