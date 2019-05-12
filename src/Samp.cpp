@@ -2,13 +2,13 @@
 *   Author: Philip Amwata
 *   Date Created: 07/05/2019
 */
-#include "AudioSample.h"
+#include "AudioSample.hpp"
 
 using namespace AMWPHI001;
 template <typename vType>
 void setArgs(int x, vType y, char *argv[])
 {
-    std::stringstream ss;      // String stream to convert command line arguments to int
+    std::stringstream ss; // String stream to convert command line arguments to int
     ss << argv[x];
     ss >> y;
     ss.clear();
@@ -28,10 +28,9 @@ int main(int argc, char *argv[])
     string inputFile1 = "";    // Name of first input file
     string inputFile2 = "";    // Name of second input file
 
-
-    setArgs(2, sampleRate, argv); // Set sample rate to argv[2]
-    setArgs(4, bitCount, argv);   // Set bit count to argv[4]
-    setArgs(6, numChannels, argv);  // Set number of channels to argv[6]
+    setArgs(2, sampleRate, argv);  // Set sample rate to argv[2]
+    setArgs(4, bitCount, argv);    // Set bit count to argv[4]
+    setArgs(6, numChannels, argv); // Set number of channels to argv[6]
     setArgs(7, outputFlag, argv);  // Set output flag to argv[7]
 
     // Check to see if the output flag is correct
