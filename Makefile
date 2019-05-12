@@ -3,8 +3,8 @@ BIN = bin
 SRC = src
 RES = results
 TARGETS = samp
-OBJECTS = Samp.o Audio.o
-SOURCES = $(SRC)/Samp.cpp $(SRC)/Audio.cpp
+OBJECTS = Samp.o
+SOURCES = $(SRC)/Samp.cpp
 
 $(TARGETS): $(OBJECTS)
 	$(CC) $(OBJECTS) -o $(TARGETS)
