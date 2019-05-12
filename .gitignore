@@ -6,3 +6,5 @@
 .vscode/ipch/ec01b6d38300e0f7/Samp.ipch
 *.bin
 *.ipch
+.vscode/c_cpp_properties.json
+.vscode/settings.json
