@@ -14,7 +14,7 @@
 #include <cstdint>
 namespace AMWPHI001
 {
-template <typename T, int numChannels = 1>
+template <typename T, int numChannels>
 class Audio
 {
 private:

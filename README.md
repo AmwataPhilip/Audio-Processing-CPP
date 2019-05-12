@@ -6,8 +6,8 @@
 
 ---
 
-    Samp.cpp
-    AudioSample.h
+    Samp.cpp - Driver file
+    AudioSample.hpp - templayed header file containing AuidoSample class
 
 ### Implementation Instructions
 
@@ -34,6 +34,6 @@
                                     Samp.o
                                 src/
                                     Samp.cpp
-                                    AudioSample.h
+                                    AudioSample.hpp
                                 Makefile
                                 README.md
